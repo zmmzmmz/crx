@@ -1,0 +1,17 @@
+{
+  "manifest_version": 2,
+  "name": "Lesson-Two",
+  "description": "例2：一周天气",
+  "version": "1.0",
+  "browser_action": {
+    "default_icon": "/images/icon19.png",
+    "default_popup": "index.html"
+  },
+  "permissions": [
+    "activeTab",
+    "storage",
+    "http://ip.taobao.com/service/getIpInfo2.php",
+    "http://int.dpool.sina.com.cn/iplookup/iplookup.php?format=json"
+  ],
+  "options_page": "settings.html"
+}

@@ -1,0 +1,18 @@
+{
+  "name": "Getting started example",
+  "description": "This extension allows the user to change the background color of the current page.",
+  "version": "1.0",
+  "manifest_version": 2,
+  "browser_action": {
+    "default_icon": {
+      "19": "images/frog-19.png"
+    },
+    "default_title": "a demo",
+    "default_popup": "popup.html"
+  },
+  "permissions": [
+    "activeTab",
+    "storage"
+  ],
+  "options_page": "setting.html"
+}
