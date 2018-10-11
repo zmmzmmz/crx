@@ -43,6 +43,26 @@ function requestLocalIp () {
             <p>地区：${address.country}${address.province}</p>
             <p>IP： ${ip.data.ip}</p>
           `
+            const opt = {
+              type: 'basic',
+              title: '消息提醒',
+              message: '你有一条新的消息',
+              iconUrl: 'images/frog-16.png',
+              buttons: [
+                {
+                  title: '回复消息'
+                },
+                {
+                  title: '关闭对话'
+                }
+              ]
+            }
+            console.log(chrome)
+            chrome.notifications.create(null, opt, function (item) {
+              chrome.notifications.onClicked.addListener(function (item) {
+                console.log(item)
+              })
+            })
           } catch (e) {
             console.log(e);
           }

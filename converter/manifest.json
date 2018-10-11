@@ -1,0 +1,21 @@
+{
+  "manifest_version": 2,
+  "name": "Convert",
+  "description": "中文繁简转换",
+  "version": "1.0",
+  "browser_action": {
+    "default_icon": "/images/global32.png",
+    "default_popup": "index.html",
+    "default_title": "点击转换简体繁体"
+  },
+  "permissions": [
+    "tabs", "*://business.facebook.com/*", "activeTab"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["*://business.facebook.com/*"],
+      "css": ["main.css"],
+      "js": ["main.js"]
+    }
+  ]
+}

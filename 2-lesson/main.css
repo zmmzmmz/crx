@@ -1,3 +1,7 @@
+* {
+  padding: 0;
+  box-sizing: border-box;
+}
 .container {
   min-width: 240px;
   text-align: center;

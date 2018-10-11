@@ -1,0 +1,21 @@
+{
+  "manifest_version": 2,
+  "name": "Lesson-Four",
+  "description": "例4：操作页面元素",
+  "version": "1.0",
+  "browser_action": {
+    "default_icon": "/images/icon19.png",
+    "default_popup": "index.html",
+    "default_title": "点击查看天气"
+  },
+  "permissions": [
+    "tabs", "*://business.facebook.com/", "activeTab"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["*://business.facebook.com/"],
+      "css": ["main.css"],
+      "js": ["main.js"]
+    }
+  ]
+}

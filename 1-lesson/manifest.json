@@ -1,7 +1,7 @@
 {
   "manifest_version": 2,
   "name": "Lesson-One",
-  "description": "例1：IP探针",
+  "description": "例1：IP detector",
   "version": "1.0",
   "browser_action": {
     "default_icon": "/images/frog-32.png",
@@ -10,6 +10,8 @@
   "permissions": [
     "activeTab",
     "storage",
+    "webRequest",
+    "notifications",
     "http://ip.taobao.com/service/getIpInfo2.php",
     "http://int.dpool.sina.com.cn/iplookup/iplookup.php?format=json"
   ]

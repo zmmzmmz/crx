@@ -1,0 +1,14 @@
+{
+  "manifest_version": 2,
+  "name": "Lesson-Three",
+  "description": "例3：查看当前浏览器安装的应用",
+  "version": "1.0",
+  "browser_action": {
+    "default_icon": "/images/icon19.png",
+    "default_popup": "index.html",
+    "default_title": "App Launcher"
+  },
+  "permissions": [
+    "management"
+  ]
+}

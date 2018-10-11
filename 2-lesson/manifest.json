@@ -5,13 +5,13 @@
   "version": "1.0",
   "browser_action": {
     "default_icon": "/images/icon19.png",
-    "default_popup": "index.html"
+    "default_popup": "index.html",
+    "default_title": "点击查看天气"
   },
   "permissions": [
     "activeTab",
     "storage",
-    "http://ip.taobao.com/service/getIpInfo2.php",
-    "http://int.dpool.sina.com.cn/iplookup/iplookup.php?format=json"
+    "http://www.sojson.com/open/api/weather/json.shtml?city=%E6%9D%AD%E5%B7%9E"
   ],
   "options_page": "settings.html"
 }
